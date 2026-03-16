@@ -1,0 +1,81 @@
+Telecom Customer Churn Analysis Dashboard
+
+Overview
+This project analyzes **customer churn** for a telecom company using a sample dataset. 
+The goal is to identify **high-risk customer segments**, understand **factors 
+contributing to churn**, and provide **business insights to improve customer retention**. 
+The analysis and dashboard are built in **Power BI**.
+
+---
+
+Dataset
+The dataset contains the following columns:
+
+| Column | Description |
+|--------|-------------|
+| `Churn` | Indicates if a customer has churned (1 = Churned, 0 = Active) |
+| `Account Week` | Customer tenure in weeks |
+| `Contract Type` | Type of contract (Month-to-Month, 1-Year, 2-Year) |
+| `Contract Renewal` | Whether the contract has been renewed (Yes/No) |
+| `Data Plan Status` | Whether the customer has a data plan (Yes/No) |
+| `Data Usage` | Amount of data used by the customer |
+| `Day Minutes` | Total minutes used during the day |
+| `Day Calls` | Number of calls during the day |
+| `Service Call` | Number of calls to customer service |
+| `Monthly Charge` | Monthly subscription charge |
+| `Overage Fee` | Extra charges for exceeding plan |
+| `Urom Minute` | International roaming usage |
+| `Transfer Status` | Not applicable in this dataset |
+
+---
+
+Key Features
+- **High-Level KPIs: 
+  - Total Customers  
+  - Total Churned  
+  - Churn Rate (%)  
+  - Average Monthly Charge  
+  - Average Overage Fee  
+
+Customer Segmentation:  
+  - Churn by Contract Type  
+  - Churn by Data Plan Status  
+  - Churn by Contract Renewal 
+ 
+Usage Analysis:
+  - Day Minutes, Day Calls, Data Usage, and Service Calls visualized to identify patterns linked to churn  
+
+Churn Diagnostics:
+  - Identify high-risk customers using Contract Type, Data Plan Status, and Service Calls  
+  - Recommend retention strategies for high-risk segments  
+
+Interactive Filters (Slicers): 
+  - Account Week  
+  - Contract Type  
+  - Data Plan Status  
+  - Contract Renewal  
+
+---
+
+Dashboard Highlights
+- Donut Chart: Visualizes Active vs Churned customers  
+- Stacked Bar / Column Charts:** Shows churn across different customer segments  
+- Cards: Displays key metrics such as Average Monthly Charge and Churn Rate  
+- Line Chart: Trends of churn over Account Weeks (customer tenure)  
+- Matrix / Table: Shows average financial metrics by segment  
+
+---
+
+Insights
+- Month-to-Month customers without a data plan are **more likely to churn**.  
+- Customers with frequent service calls are at **higher churn risk**.  
+- High-value customers (high monthly charge or overage fees) who are at risk should be **targeted for retention campaigns**.  
+
+---
+
+Tools & Technologies
+- Power BI: Dashboard creation and visualization  
+- DAX: Measures for KPIs, Churn Rate, and Average Financial Metrics  
+- Power Query: Data cleaning and transformation  
+
+---
